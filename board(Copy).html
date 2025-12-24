@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Papan Tulis</title>
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+  }
+  canvas {
+    touch-action: none;
+    display: block;
+  }
+  .toolbar {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    right: 20px
+    left: auto;
+    z-index: 999;
+  }
+  button {
+    touch-action: manipulation;
+    padding: 20px;
+    font-size: 16px;
+    min-width: 36px;
+    min-height: 36px;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button onclick="setPen()">Pena</button>
+  <button onclick="setEraser()">Penghapus</button>
+  <button onclick="resetCanvas()">Reset</button>
+</div>
+
+<canvas id="board"></canvas>
+
+<script>
+const canvas = document.getElementById("board");
+const ctx = canvas.getContext("2d");
+
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener("resize", resize);
+
+// default pen
+ctx.lineWidth = 4;
+ctx.lineCap = "round";
+ctx.strokeStyle = "white";
+ctx.globalCompositeOperation = "source-over";
+
+let drawing = false;
+
+function setPen() {
+  ctx.globalCompositeOperation = "source-over";
+  ctx.strokeStyle = "white";
+  ctx.lineWidth = 4;
+}
+
+function setEraser() {
+  ctx.globalCompositeOperation = "destination-out";
+  ctx.lineWidth = 25; // ukuran penghapus
+}
+
+canvas.addEventListener("touchstart", e => {
+  drawing = true;
+  ctx.beginPath();
+  const t = e.touches[0];
+  ctx.moveTo(t.clientX, t.clientY);
+});
+
+canvas.addEventListener("touchmove", e => {
+  if (!drawing) return;
+  const t = e.touches[0];
+  ctx.lineTo(t.clientX, t.clientY);
+  ctx.stroke();
+});
+
+canvas.addEventListener("touchend", () => {
+  drawing = false;
+});
+
+function resetCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+</script>
+
+</body>
+</html>
