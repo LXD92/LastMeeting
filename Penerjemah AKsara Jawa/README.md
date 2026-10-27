@@ -19,8 +19,8 @@ Keterbatasan yang perlu diperhatikan:
 
 - Ejaan yang sama dapat mewakili pelafalan berbeda; transliterasi tidak dapat menebak makna atau dialek.
 - Penentuan pasangan masih memakai pemenggalan gugus konsonan sederhana; gugus, sandhangan, atau coda kompleks mungkin memerlukan koreksi.
-- Aksara murda, aksara swara khusus, angka Jawa, pada/tanda baca tradisional, dan aturan penulisan nama/serapan belum diterapkan sebagai aturan ortografis.
-- Tanda baca Latin, spasi, angka, dan karakter yang tidak dipetakan dipertahankan; huruf Latin kapital dikenali tanpa padanan kapital khusus di Aksara Jawa.
+- Aksara murda, aksara swara khusus, pada/tanda baca tradisional, dan aturan penulisan nama/serapan belum diterapkan sebagai aturan ortografis.
+- Digit ASCII `0`-`9` dipetakan ke angka Jawa Unicode; tanda baca Latin, spasi, dan karakter lain yang tidak dipetakan dipertahankan. Huruf Latin kapital dikenali tanpa padanan kapital khusus di Aksara Jawa.
 - Font memengaruhi bentuk pasangan dan sandhangan. Jika tampilan kurang tepat, coba pasang Noto Sans Javanese pada sistem.
 
 Karena batas tersebut, gunakan hasil sebagai draf transliterasi dan periksa kembali untuk kebutuhan formal atau publikasi.
@@ -33,9 +33,16 @@ Dengan Node.js terpasang, jalankan perintah berikut di terminal folder proyek:
 node -e "const assert=require('node:assert/strict'); const t=require('./script.js'); assert.equal(t.transliterate('aku'), '\uA9B2\uA98F\uA9B8'); assert.equal(t.transliterate('Aku'), t.transliterate('aku')); assert.equal(t.prepareInput('Aku Bocah', 'lowercase'), 'aku bocah'); assert.equal(t.prepareInput('Aku Bocah', 'preserve'), 'Aku Bocah'); assert.equal(t.transliterate('aku, ya!'), '\uA9B2\uA98F\uA9B8, \uA9AA!'); assert.equal(t.transliterate('bocah'), '\uA9A7\uA9BA\uA9B4\uA995\uA983'); assert.equal(t.transliterate('anak'), '\uA9B2\uA9A4\uA98F\uA9C0'); assert.equal(t.transliterate('tha'), '\uA99B'); assert.equal(t.transliterate('dha'), '\uA99D'); assert.equal(t.transliterate('ke'), '\uA98F\uA9BC'); assert.equal(t.transliterate('ké'), '\uA98F\uA9BA'); assert.equal(t.transliterate('ko'), '\uA98F\uA9BA\uA9B4'); assert.equal(t.transliterate('kra'), '\uA98F\uA9C0\uA9AB'); assert.equal(t.transliterate('á'), 'á'); console.log('Semua pemeriksaan dasar lulus');"
 ```
 
+Tes angka Jawa:
+
+```sh
+node -e "const assert=require('node:assert/strict'); const t=require('./script.js'); assert.equal(t.transliterate('0123456789'), String.fromCodePoint(0xA9D0,0xA9D1,0xA9D2,0xA9D3,0xA9D4,0xA9D5,0xA9D6,0xA9D7,0xA9D8,0xA9D9)); assert.equal(t.transliterate('tahun 2026!'), t.transliterate('tahun')+' '+String.fromCodePoint(0xA9D2,0xA9D0,0xA9D2,0xA9D6)+'!'); console.log('Tes angka Jawa lulus');"
+```
+
 Checklist antarmuka di browser:
 
 - Ketik `Aku Bocah Sing Sregep Banget.`; hasil berubah otomatis.
+- Coba `Tahun 2026.`; digit tampil sebagai angka Jawa dan titik tetap dipertahankan.
 - Coba `wkwkwk` pada layar sempit dan ukuran teks besar; pasangan tidak menimpa keterangan hasil atau keluar dari panel.
 - Letakkan kursor di tengah kata dan tekan tombol `é`; karakter masuk pada posisi kursor dan hasil diperbarui.
 - Ganti format huruf; pratinjau teks diproses ikut berubah dan hasil diperbarui.

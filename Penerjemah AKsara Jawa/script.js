@@ -18,6 +18,7 @@
 
   const CODAS = { ng: '\uA981', r: '\uA982', h: '\uA983' };
   const PANGKON = '\uA9C0';
+  const JAVANESE_DIGITS = ['\uA9D0', '\uA9D1', '\uA9D2', '\uA9D3', '\uA9D4', '\uA9D5', '\uA9D6', '\uA9D7', '\uA9D8', '\uA9D9'];
   const VOWEL_PATTERN = /[aieuoéè]/;
 
   function readConsonant(text, index) {
@@ -87,7 +88,12 @@
 
   // Pair-like clusters use pangkon before the following aksara; final r/h/ng use coda signs.
   function transliterate(text) {
-    return text.replace(/[a-zéè]+/giu, transliterateWord);
+    return text.replace(/[a-zéè]+|\d+/giu, (token) => {
+      if (/^\d+$/.test(token)) {
+        return [...token].map((digit) => JAVANESE_DIGITS[Number(digit)]).join('');
+      }
+      return transliterateWord(token);
+    });
   }
 
   function prepareInput(text, format) {
