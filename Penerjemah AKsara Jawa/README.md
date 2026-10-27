@@ -36,12 +36,21 @@ node -e "const assert=require('node:assert/strict'); const t=require('./script.j
 Checklist antarmuka di browser:
 
 - Ketik `Aku Bocah Sing Sregep Banget.`; hasil berubah otomatis.
+- Coba `wkwkwk` pada layar sempit dan ukuran teks besar; pasangan tidak menimpa keterangan hasil atau keluar dari panel.
 - Letakkan kursor di tengah kata dan tekan tombol `é`; karakter masuk pada posisi kursor dan hasil diperbarui.
 - Ganti format huruf; pratinjau teks diproses ikut berubah dan hasil diperbarui.
 - Ganti pilihan font; tampilan hasil berubah, dan tombol perkecil tidak ditampilkan.
 - Coba spasi, koma, titik, lalu gunakan **Salin hasil** dan **Unduh TXT**.
 - Coba tombol ukuran, tema, **Tukar contoh**, dan **Hapus**. Menekan **Terjemahkan** saat input kosong menampilkan pesan.
 - Periksa tampilan di layar sempit dan pastikan font yang tersedia merender aksara dengan benar.
+
+## Pengaturan dan easter egg
+
+- Buka ikon roda gigi. Kedua opsi visibilitas tidak dicentang secara default; nyalakan salah satunya dan muat ulang halaman untuk memastikan preferensinya tersimpan.
+- Sembunyikan opsi huruf kecil lalu ketik teks kapital: input dan pratinjau tetap mempertahankan huruf asli. Sembunyikan tombol **Terjemahkan**: hasil tetap diperbarui otomatis saat mengetik.
+- Tekan **Reset Pengaturan** untuk mengembalikan opsi visibilitas ke keadaan tidak dicentang dan preferensi tampilan lain ke default.
+- Di bagian bawah menu Pengaturan, klik **Informasi rahasia** lima kali. Mulai permainan, pilih kartu; pemain menang saat mencapai 7 poin sebelum Asyrafu. **Pentol Hijau** memberi 2 poin dengan aman, sementara kartu lain memberi efek acak atau mencuri poin. Asyrafu mempelajari kartu yang diulang dan memilih counter; mengulang satu kartu bukan strategi kemenangan yang aman.
+- Gunakan **Main Lagi** setelah menang atau kalah. Voucher dan restoran sepenuhnya fiktif, tidak dapat ditukarkan, dan permainan tidak memakai taruhan atau mekanik kekerasan.
 
 ## Mengganti mesin transliterasi
 
