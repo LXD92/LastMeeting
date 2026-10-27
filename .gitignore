@@ -1,0 +1,37 @@
+# Python environments and bytecode
+.venv/
+.Venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Runtime data, generated output, logs, caches
+.data/
+dist/
+logs/
+*.log
+*.sqlite3
+*.db
+*.tmp
+*.temp
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# JavaScript dependencies and Cloudflare state
+node_modules/
+.wrangler/
+.dev.vars
+
+# Downloaded media and OS/editor files
+Material/Music/
+Downloads/
+*.mp3
+*.mp4
+*.webm
+*.mkv
+.DS_Store
+Thumbs.db
+.vscode/
