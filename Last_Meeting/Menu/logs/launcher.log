@@ -1,0 +1,66 @@
+2026-10-27 18:30:36,809 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 18:30:36,857 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 18:30:36,875 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/material "HTTP/1.1 200 OK"
+2026-10-27 18:30:36,900 INFO httpx2: HTTP Request: POST http://127.0.0.1/api/apps/hanacaraka/launch "HTTP/1.1 403 Forbidden"
+2026-10-27 18:30:36,959 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 18:30:36,998 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 18:30:37,007 WARNING Menu.core.config_manager: Preferensi tidak dapat dibaca; memakai default: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-10-27 18:30:37,293 INFO Menu.core.app_registry: Folder tanpa entry point aplikasi diabaikan: C:\Users\rreni\AppData\Local\Temp\tmpdyea0_lz\docs-only
+2026-10-27 18:36:37,611 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 18:36:37,649 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 18:36:37,662 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/material "HTTP/1.1 200 OK"
+2026-10-27 18:36:37,679 INFO httpx2: HTTP Request: POST http://127.0.0.1/api/apps/hanacaraka/launch "HTTP/1.1 403 Forbidden"
+2026-10-27 18:36:37,727 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 18:36:37,762 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 18:36:37,769 WARNING Menu.core.config_manager: Preferensi tidak dapat dibaca; memakai default: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-10-27 18:36:38,050 INFO Menu.core.app_registry: Folder tanpa entry point aplikasi diabaikan: C:\Users\rreni\AppData\Local\Temp\tmp5hwjy85z\docs-only
+2026-10-27 18:46:42,048 INFO httpx2: HTTP Request: GET http://127.0.0.1:8000/ "HTTP/1.1 200 OK"
+2026-10-27 18:46:42,064 INFO httpx2: HTTP Request: GET http://127.0.0.1:8000/ "HTTP/1.1 200 OK"
+2026-10-27 18:46:42,082 INFO httpx2: HTTP Request: GET http://127.0.0.1:8000/ "HTTP/1.1 200 OK"
+2026-10-27 18:46:42,113 INFO httpx2: HTTP Request: GET http://127.0.0.1:8000/api/apps "HTTP/1.1 200 OK"
+2026-10-27 18:46:49,102 INFO httpx2: HTTP Request: GET http://127.0.0.1:8000/apps/hanacaraka/index.html "HTTP/1.1 200 OK"
+2026-10-27 18:46:49,132 INFO httpx2: HTTP Request: GET http://127.0.0.1:8000/apps/hanacaraka/style.css "HTTP/1.1 200 OK"
+2026-10-27 18:46:49,167 INFO httpx2: HTTP Request: GET http://127.0.0.1:8000/apps/hanacaraka/script.js "HTTP/1.1 200 OK"
+2026-10-27 18:46:49,183 INFO httpx2: HTTP Request: GET http://127.0.0.1:8000/static/app.js "HTTP/1.1 200 OK"
+2026-10-27 18:46:49,199 INFO httpx2: HTTP Request: GET http://127.0.0.1:8000/static/style.css "HTTP/1.1 200 OK"
+2026-10-27 18:47:22,409 INFO httpx2: HTTP Request: POST http://127.0.0.1:8000/api/apps/hanacaraka/launch "HTTP/1.1 200 OK"
+2026-10-27 18:47:22,467 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 18:47:22,537 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 18:47:22,554 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/material "HTTP/1.1 200 OK"
+2026-10-27 18:47:22,583 INFO httpx2: HTTP Request: POST http://127.0.0.1/api/apps/hanacaraka/launch "HTTP/1.1 403 Forbidden"
+2026-10-27 18:47:22,660 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 18:47:22,707 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 18:47:22,718 WARNING Menu.core.config_manager: Preferensi tidak dapat dibaca; memakai default: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-10-27 18:47:23,010 INFO Menu.core.app_registry: Folder tanpa entry point aplikasi diabaikan: C:\Users\rreni\AppData\Local\Temp\tmp3rs_ep6p\docs-only
+2026-10-27 19:08:15,229 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 19:08:15,309 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 19:08:15,326 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/material "HTTP/1.1 200 OK"
+2026-10-27 19:08:15,373 INFO httpx2: HTTP Request: POST http://127.0.0.1/api/apps/hanacaraka/launch "HTTP/1.1 403 Forbidden"
+2026-10-27 19:08:15,427 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 19:08:15,486 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 19:08:15,496 WARNING Menu.core.config_manager: Preferensi tidak dapat dibaca; memakai default: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-10-27 19:08:15,780 INFO Menu.core.app_registry: Folder tanpa entry point aplikasi diabaikan: C:\Users\rreni\AppData\Local\Temp\tmpyfhjw81s\docs-only
+2026-10-27 19:42:20,688 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 19:42:20,744 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 19:42:20,762 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/material "HTTP/1.1 200 OK"
+2026-10-27 19:42:20,783 INFO httpx2: HTTP Request: POST http://127.0.0.1/api/apps/hanacaraka/launch "HTTP/1.1 403 Forbidden"
+2026-10-27 19:42:20,851 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 19:42:20,891 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 19:42:20,900 WARNING Menu.core.config_manager: Preferensi tidak dapat dibaca; memakai default: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-10-27 19:42:21,194 INFO Menu.core.app_registry: Folder tanpa entry point aplikasi diabaikan: C:\Users\rreni\AppData\Local\Temp\tmp40ep6at0\docs-only
+2026-10-27 19:47:51,634 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 19:47:51,674 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 19:47:51,692 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/material "HTTP/1.1 200 OK"
+2026-10-27 19:47:51,705 INFO httpx2: HTTP Request: POST http://127.0.0.1/api/apps/hanacaraka/launch "HTTP/1.1 403 Forbidden"
+2026-10-27 19:47:51,755 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 19:47:51,789 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 19:47:51,798 WARNING Menu.core.config_manager: Preferensi tidak dapat dibaca; memakai default: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-10-27 19:47:52,086 INFO Menu.core.app_registry: Folder tanpa entry point aplikasi diabaikan: C:\Users\rreni\AppData\Local\Temp\tmpoyrvmngc\docs-only
+2026-10-27 20:03:33,900 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 20:03:33,948 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 20:03:33,963 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/material "HTTP/1.1 200 OK"
+2026-10-27 20:03:33,979 INFO httpx2: HTTP Request: POST http://127.0.0.1/api/apps/hanacaraka/launch "HTTP/1.1 403 Forbidden"
+2026-10-27 20:03:34,024 INFO httpx2: HTTP Request: PUT http://127.0.0.1/api/preferences "HTTP/1.1 200 OK"
+2026-10-27 20:03:34,061 INFO httpx2: HTTP Request: GET http://127.0.0.1/api/apps "HTTP/1.1 200 OK"
+2026-10-27 20:03:34,071 WARNING Menu.core.config_manager: Preferensi tidak dapat dibaca; memakai default: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-10-27 20:03:34,351 INFO Menu.core.app_registry: Folder tanpa entry point aplikasi diabaikan: C:\Users\rreni\AppData\Local\Temp\tmpc0c06idv\docs-only
