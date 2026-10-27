@@ -249,7 +249,7 @@
     input.focus();
   });
   document.getElementById('example-button').addEventListener('click', () => {
-    input.value = 'Aku bocah sing sregep banget. Tangi gasik rewangi ibuku nyapu. Terus aku kudu adus esuk.';
+    input.value = 'Aku bocah sing sregep banget. Tangi gasik rewangi ibuku nyapu. Terus aku kudu adus ésuk.';
     updateResult(false);
   });
   copyButton.addEventListener('click', async () => {
