@@ -6,7 +6,11 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "dist"
-RUANGNADA_URL = os.environ.get("RUANGNADA_PUBLIC_URL", "").strip().rstrip("/")
+#RUANGNADA_URL = os.environ.get("RUANGNADA_PUBLIC_URL", "").strip().rstrip("/")
+RUANGNADA_URL = os.environ.get(
+    "RUANGNADA_PUBLIC_URL",
+    "https://iowa-george-valve-hon.trycloudflare.com",
+).strip().rstrip("/")
 
 if RUANGNADA_URL:
     parsed = urlparse(RUANGNADA_URL)
