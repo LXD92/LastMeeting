@@ -9,7 +9,7 @@ OUTPUT = ROOT / "dist"
 #RUANGNADA_URL = os.environ.get("RUANGNADA_PUBLIC_URL", "").strip().rstrip("/")
 RUANGNADA_URL = os.environ.get(
     "RUANGNADA_PUBLIC_URL",
-    "https://iowa-george-valve-hon.trycloudflare.com",
+    "https://wiley-intensity-knowledge-oregon.trycloudflare.com",
 ).strip().rstrip("/")
 
 if RUANGNADA_URL:
